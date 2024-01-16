@@ -24,12 +24,19 @@
 
 .profile{
     border-radius: 96%;
-    width: 203px;
-    margin: 45px;
-    margin-left: 73px;
+    width: 198px;
+    margin: 18px;
+    margin-left: 10px;
 
 }
 .background{
     background-color: aqua;
 
+}
+
+#cv-template{
+    display: none;
+}
+.template{
+    height: 100vh;
 }

@@ -59,7 +59,7 @@ function generateCV() {
         str = str + `<li> ${e.value} </li>`;
     }
     document.getElementById("workexperianceT").innerHTML = str
-
+      
 
 }
 
