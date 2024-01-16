@@ -45,21 +45,38 @@ function generateCV() {
     document.getElementById("addressT").innerHTML = document.getElementById("addressfield").value;
 
     document.getElementById("linkedT").innerHTML = document.getElementById("linkedinfield").value;
-    document.getElementById("gitT").innerHTML = document.getElementById("gitfiled").value;
+    document.getElementById("gitT").innerHTML = document.getElementById("gitfield").value;
 
     // Objective
     document.getElementById("objectiveT").innerHTML = document.getElementById("objectivefield").value;
 
 
     // work Experiance
-    let wes = document.getElementsByClassName("weField");
+    let wes = document.getElementsByClassName("we-field");
 
-    let str = ""
+    let str = "";
     for (let e of wes) {
         str = str + `<li> ${e.value} </li>`;
     }
-    document.getElementById("workexperianceT").innerHTML = str
-      
+    document.getElementById("workexperianceT").innerHTML = str;
 
+
+    // Academic qualification
+    let aqs = document.getElementsByClassName("eqField");
+    let str1 = " ";
+    for(let e of aqs){
+        str1 += `<li> ${e.value} </li>`;
+
+    }
+
+    document.getElementById("aqT").innerHTML = str1;
+
+    document.getElementById("CV-form").style.display = "none";
+    document.getElementById("cv-template").style.display="block"
+
+}
+
+function printCV(){
+    window.print();
 }
 
