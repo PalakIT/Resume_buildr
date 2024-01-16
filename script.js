@@ -64,7 +64,7 @@ function generateCV() {
     // Academic qualification
     let aqs = document.getElementsByClassName("eqField");
     let str1 = " ";
-    for(let e of aqs){
+    for (let e of aqs) {
         str1 += `<li> ${e.value} </li>`;
 
     }
@@ -72,11 +72,11 @@ function generateCV() {
     document.getElementById("aqT").innerHTML = str1;
 
     document.getElementById("CV-form").style.display = "none";
-    document.getElementById("cv-template").style.display="block"
+    document.getElementById("cv-template").style.display = "block"
 
 }
 
-function printCV(){
+function printCV() {
     window.print();
 }
 
